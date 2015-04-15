@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+	 
+)
 
-func main() {
-    fmt.Println("hello, world")
+	func main() {
+  	if len(os.Args) < 3 {
+		fmt.Println("Uso: conversor <valores> <unidade>")
+		os.Exit(1)
+	}
 }
